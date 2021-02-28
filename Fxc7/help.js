@@ -53,7 +53,7 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 ͏͏͏͏͏͏͏͏͏͏͏͏͏͏╭──────「 *MEDIA DOWNLOADER* 」
 ┴
 │➻ *${prefix}tiktokstalk username*
-│➻ *${prefix}igstalk _farhan_xcode7*
+│➻ *${prefix}igstalk username*
 │➻ *${prefix}instavid link valid*
 │➻ *${prefix}instaimg link valid*
 │➻ *${prefix}instastory username*
@@ -73,21 +73,21 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 ┴
 │➻ *${prefix}quotemaker tx/wtrmk/tema*
 │➻ *${prefix}nulis nama/kelas/text*
-│➻ *${prefix}croman FXC7 dan Friend*
-│➻ *${prefix}slide Fxc7 BOT WA*
+│➻ *${prefix}croman FIDS dan Friend*
+│➻ *${prefix}slide FIDS BOT WA*
 ├───────────────────
 │➻ *${prefix}tp 1 - 162*
 │➻ *${prefix}ep 1 - 216*
-│➻ *${prefix}tahta FXC7*
-│➻ *${prefix}cglass FXC7*
-│➻ *${prefix}cstyle FXC7*
-│➻ *${prefix}cgame FXC7*
-│➻ *${prefix}clove FXC7*
-│➻ *${prefix}cparty FXC7*
-│➻ *${prefix}csky FXC7*
+│➻ *${prefix}tahta*
+│➻ *${prefix}cglass*
+│➻ *${prefix}cstyle*
+│➻ *${prefix}cgame*
+│➻ *${prefix}clove*
+│➻ *${prefix}cparty*
+│➻ *${prefix}csky*
 │➻ *${prefix}tts id Haii*
-│➻ *${prefix}ttp Fxc7*
-│➻ *${prefix}cpaper Fxc7*
+│➻ *${prefix}ttp*
+│➻ *${prefix}cpaper*
 ├───────────────────
 │➻ *${prefix}stiker*
 │➻ *${prefix}gifstiker*
@@ -196,14 +196,14 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 ┴
 │➻ *${prefix}jarak Banyuwangi/Surabaya*
 │➻ *${prefix}translate en/Apa kabar?*
-│➻ *${prefix}pasangan Farhan/Iriene*
-│➻ *${prefix}gantengcek Farhan*
-│➻ *${prefix}cantikcek Iriene*
-│➻ *${prefix}artinama Farhan*
-│➻ *${prefix}persengay Topan*
-│➻ *${prefix}pbucin Farhan*
-│➻ *${prefix}bpfont Farhan*
-│➻ *${prefix}textstyle FXC7*
+│➻ *${prefix}pasangan Aku/Kamu*
+│➻ *${prefix}gantengcek*
+│➻ *${prefix}cantikcek*
+│➻ *${prefix}artinama*
+│➻ *${prefix}persengay*
+│➻ *${prefix}pbucin*
+│➻ *${prefix}bpfont*
+│➻ *${prefix}textstyle*
 │➻ *${prefix}jadwaltv antv*
 │➻ *${prefix}lirik melukis senja*
 │➻ *${prefix}chord Melukis senja*
@@ -364,16 +364,17 @@ exports.bottt = bottt
 // donasi menu
 const donasi = (name) => { 
 	return `       
-╭─────「 *DONASI SEIKHLASNYA* 」
+╭─────「 *DONASI AOOBOT* 」
 ┴
-│√ *PULSA: 083144780782*
-│√ *OVO : 08311800241*
+│√ *PULSA*
+│√ *SMARTFREN: 088223955883*
+│√ *TELKOMSEL: 081319886742*
 │
-│\`\`\`Pulsa\`\`\`
-│ *15k Invite Bot Ke Grup selama 1 bulan*
+│\`\`\`*GRUP*\`\`\`
+│ *10k Invite Bot Ke Grup selama 1 bulan*
 │
-│\`\`\`OVO\`\`\`
-│ *10k Invite Bot Ke Group Selama 1 Bulan*
+│\`\`\`*PREMIUM*\`\`\`
+│ *5k daftar premium Selama 1 Bulan*
 ┬
 ╰──────「 *BY ${name}* 」
 
