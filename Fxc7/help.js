@@ -46,6 +46,7 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 │➻ *${prefix}banlist*
 │➻ *${prefix}premiumlist*
 │➻ *${prefix}bahasa*
+│➻ *#lainnya*
 ┬
 ╰────────────────────────
 
@@ -144,6 +145,7 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 │➻ *${prefix}mentionall*
 │➻ *${prefix}fitnah @mentioned/isi/balasan*
 │➻ *${prefix}listadmin*
+│➻ *#lainnya*
 ┬
 ╰────────────────────────
 
@@ -188,6 +190,7 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 │➻ *${prefix}jadwaltvnow*
 │➻ *${prefix}hekerbucin*
 │➻ *${prefix}katailham*
+│➻ *#lainnya*
 ┬
 ╰────────────────────────
 
@@ -218,6 +221,7 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 │➻ *${prefix}mimpi Ular*
 │➻ *${prefix}infoalamat jalan Banyuwangi*
 │➻ *${prefix}playstore WhatsApp*
+│➻ *#lainnya*
 ┬
 ╰───────────────────────────
 
@@ -234,6 +238,7 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 │➻ *${prefix}kalkulator 13*12*
 │➻ *${prefix}moddroid lightroom*
 │➻ *${prefix}happymod lightroom*
+│➻ *#lainnya*
 ┬
 ╰────────────────────────
 
