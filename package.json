@@ -49,10 +49,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Fxc7/termux-bot-wa.git"
+    "url": "git+https://github.com/apid13/bott.git"
   },
   "bugs": {
-    "url": "https://github.com/Fxc7/termux-bot-wa/issues"
+    "url": "https://github.com/apid13/bott/issues"
   },
-  "homepage": "https://github.com/Fxc7/termux-bot-wa#readme"
+  "homepage": "https://github.com/apid13/bott#readme"
 }
