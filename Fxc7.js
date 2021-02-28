@@ -62,20 +62,20 @@ const { wait, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRando
 
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
-            + 'FN:Zaki\n'
-            + 'ORG:Owner GANS;\n'
-            + 'TEL;type=CELL;type=VOICE;waid=6283144780782:+62 831-4478-0782\n'
+            + 'FN:FIDS\n'
+            + 'ORG:Owner BOT;\n'
+            + 'TEL;type=CELL;type=VOICE;waid=6288223955883:+62 882-2395-5883\n'
             + 'END:VCARD'
 
-prefix = "!"
-name = "~ IRIENE BOT"
-rdaftar = "TERIMA KASIH TELAH DAFTAR MENJADI TEMEN IRIENEBOT😁"
-rmenu = "HAI TEMEN IRIENEBOT👋 JANGAN LUPA DONASI YAA:)"
+prefix = "#"
+name = "~ AOOBOT"
+rdaftar = "TERIMA KASIH TELAH DAFTAR MENJADI TEMEN AOOBOT😁"
+rmenu = "HAI TEMEN AOOBOT👋"
 botinfo = "UNTUK INVITE BOT SILAHKAN DONASI DULU YAA:)"
 limitt = 10
 memberLimit = 2
 ban = []
-premium = ["6283144780782@s.whatsapp.net"]
+premium = ["6288223955883@s.whatsapp.net"]
 
 function kyun(seconds){
   function pad(s){
@@ -129,7 +129,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Sayonara @${num.split('@')[0]} ANAK KOMTOL JASA MU SANGAT NGOMTOL`
+				teks = `Sayonara @${num.split('@')[0]} Akhirnya beban grup berkurang 1:'`
 				let buff = await getBuffer(ppimg)
 				frhan.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
@@ -201,7 +201,7 @@ async function starts() {
 			}
 
 			const botNumber = frhan.user.jid
-			const ownerNumber = ["6283144780782@s.whatsapp.net"] // owner number ubah aja
+			const ownerNumber = ["6288223955883@s.whatsapp.net"] // owner number ubah aja
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await frhan.groupMetadata(from) : ''
@@ -373,7 +373,7 @@ async function starts() {
 				break 
 		case 'daftar':
 					frhan.updatePresence(from, Presence.composing)
-					if (isUser) return reply('kamu sudah Menjadi Temen IRIENEBOT:D')
+					if (isUser) return reply('Kamu Sudah Menjadi Teman AOOBOT:D')
 					if (isBanned) return reply(mess.only.benned)
 					user.push(sender)
 					fs.writeFileSync('./database/json/user.json', JSON.stringify(user))
@@ -406,7 +406,7 @@ async function starts() {
 					await costum(help(prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam, tanggal), text, FarhanGans, rmenu)
     				break 
     			case 'infobot':
-    				await costum(bottt(prefix), text, FarhanGans, botinfo)
+    				await costum(bottt(prefix), text, FIDS, botinfo)
     				break
     			case 'profile':
     				frhan.updatePresence(from, Presence.composing)
@@ -437,7 +437,7 @@ async function starts() {
 					me = frhan.user
 					user.push(sender)
 					uptime = process.uptime()
-					teks = `➽ *Nama Bot* : ${me.name}\n➽ *Owner Bot* : @${ownerNumber}\n➽ *prefix* : | ${prefix} |\n➽ *Total Block* : ${blocked.length}\n➽ *Aktif Sejak* : ${kyun(uptime)}\n\n➽ *Total Pengguna* : ${user.length} User\n➽ *Instagram* : https://www.instagram.com/_farhan_xcode7\n➽ *Special Thanks To* :\n\n➽ Allah SWT \n➽ MhankBarBar\n➽ Nurutomo\n➽ Monurios`
+					teks = `➽ *Nama Bot* : ${me.name}\n➽ *Owner Bot* : @${ownerNumber}\n➽ *prefix* : | ${prefix} |\n➽ *Total Block* : ${blocked.length}\n➽ *Aktif Sejak* : ${kyun(uptime)}\n\n➽ *Total Pengguna* : ${user.length} User\n➽ *Special Thanks To* :\n\n➽ Allah SWT \n➽ MhankBarBar\n➽ Nurutomo\n➽ Monurios`
 					buffer = await getBuffer(me.imgUrl)
 					frhan.sendMessage(from, buffer, image, {quoted: mek, caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break 
@@ -517,7 +517,7 @@ async function starts() {
 					if (!isGroup) return reply(mess.only.group)
 					if (!isOwner) return reply(mess.only.ownerB)
 					frhan.blockUser (`${body.slice(7)}@c.us`, "add")
-					frhan.sendMessage(from, `perintah Diterima, memblokir ${body.slice(7)}@c.us`, text)
+					frhan.sendMessage(from, `Perintah Diterima, memblokir ${body.slice(7)}@c.us`, text)
 					break
 				case 'unblock':
                     if (isBanned) return reply(mess.only.benned)    
@@ -526,7 +526,7 @@ async function starts() {
 					if (!isGroup) return reply(mess.only.group)
 					if (!isOwner) return reply(mess.only.ownerB)
 				    frhan.blockUser (`${body.slice(9)}@c.us`, "remove")
-					frhan.sendMessage(from, `perintah Diterima, membuka blokir ${body.slice(9)}@c.us`, text)
+					frhan.sendMessage(from, `Perintah Diterima, membuka blokir ${body.slice(9)}@c.us`, text)
 				    break 
 				case 'readmore':
 					if (isBanned) return reply(mess.only.benned)    
@@ -1111,7 +1111,7 @@ async function starts() {
                          text: teks1,
                          contextInfo: {mentionedJid: [nomor]},
                      }
-                    frhan.sendMessage('628311800241@s.whatsapp.net', options, text, {quoted: mek})
+                    frhan.sendMessage('6288223955883@s.whatsapp.net', options, text, {quoted: mek})
                     reply('Masalah telah di laporkan ke owner BOT, laporan palsu/main2 tidak akan ditanggapi.')
                     break
                 case 'request':
@@ -1127,7 +1127,7 @@ async function starts() {
                          text: ress,
                          contextInfo: {mentionedJid: [nomor]},
                      }
-                    frhan.sendMessage('628311800241@s.whatsapp.net', options, text, {quoted: mek})
+                    frhan.sendMessage('6288223955883@s.whatsapp.net', options, text, {quoted: mek})
                     reply('REQUEST ANDA TELAH SAMPAI ke owner BOT, Requests palsu/main2 tidak akan ditanggapi.')
                     break
 				case 'memeindo':
@@ -2217,7 +2217,7 @@ async function starts() {
 					for (let _ of anu) {
 						frhan.deleteChat(_.jid)
 					}
-					reply(`\`\`\`Sukses delete all chat IRIENEBOT\`\`\``)
+					reply(`\`\`\`Sukses delete all chat AOOBOT\`\`\``)
 					break
                                 case 'bcgc':
 					frhan.updatePresence(from, Presence.composing) 
@@ -2250,7 +2250,7 @@ async function starts() {
 						reply('Suksess broadcast')
 					} else {
 						for (let _ of anu) {
-							sendMess(_.jid, `[ *IRIENEBOT BROADCAST* ]\n\n${body.slice(4)}`)
+							sendMess(_.jid, `[ *AOOBOT BROADCAST* ]\n\n${body.slice(4)}`)
 						}
 						reply('Suksess broadcast')
 					}
@@ -2332,7 +2332,7 @@ async function starts() {
 					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag target yang ingin di jadi admin!')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 					if (mentioned.length > 1) {
-						teks = 'Perintah di terima, anda menjdi admin :\n'
+						teks = 'Perintah di terima, anda menjadi admin :\n'
 						for (let _ of mentioned) {
 							teks += `@${_.split('@')[0]}\n`
 						}
@@ -2853,7 +2853,7 @@ async function starts() {
 					reply(mess.wait)
 					anu = await fetchJson(`https://mnazria.herokuapp.com/api/smule?link=${args[0]}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
-					teks = `*Title* : ${anu.title}\n\n Tunggu Sebentar 1 menit Mungkun Agak Lama Karna Mendownload Video`
+					teks = `*Title* : ${anu.title}\n\n Tunggu Sebentar 1 menit Mungkin Agak Lama Karna Mendownload Video`
 					thumb = await getBuffer(anu.thumb)
 					frhan.sendMessage(from, thumb, image, {quoted: mek, caption: teks})
 					buffer = await getBuffer(anu.result)
@@ -3225,7 +3225,7 @@ case 'asupan':
 						console.log(muehe)
 						reply(muehe)
 					} else {
-						console.log(color('[IRIENEBOT]','aqua'), 'Command Tidak Terdaftar', color(sender.split('@')[0]))
+						console.log(color('[AOOBOT]','aqua'), 'Command Tidak Terdaftar', color(sender.split('@')[0]))
 					}
                            }
 		} catch (e) {
