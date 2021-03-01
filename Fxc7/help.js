@@ -272,7 +272,7 @@ exports.bottt = bottt
 // donasi menu
 const donasi = (name) => { 
 	return `       
-╭─────「 *DONASI AOOBOT* 」
+╭─────「 *DONASI FIDSBOT* 」
 ┴
 │√ *PULSA*
 │√ *SMARTFREN: 088223955883*
