@@ -68,12 +68,12 @@ const vcard = 'BEGIN:VCARD\n'
             + 'END:VCARD'
 
 prefix = "#"
-name = "~ AOOBOT"
-rdaftar = "TERIMA KASIH TELAH DAFTAR MENJADI TEMEN AOOBOT😁"
-rmenu = "HAI TEMEN AOOBOT👋"
+name = "~ FIDSBOT"
+rdaftar = "TERIMA KASIH TELAH DAFTAR MENJADI TEMEN FIDSBOT😁"
+rmenu = "HAI TEMEN FIDSBOT👋"
 botinfo = "UNTUK INVITE BOT SILAHKAN DONASI DULU YAA:)"
-limitt = 10
-memberLimit = 2
+limitt = 99999
+memberLimit = 1
 ban = []
 premium = ["6288223955883@s.whatsapp.net"]
 
@@ -196,7 +196,7 @@ async function starts() {
 					userB: `Hai Kak ${pushname2} Kamu Belom Terdaftar Didatabase Silahkan Ketik \n${prefix}daftar`,
 					admin: '*ᴍᴀᴀꜰ ᴩᴇʀɪɴᴛᴀʜ ɪɴɪ ʜᴀɴyᴀ ʙɪꜱᴀ ᴅɪ ɢᴜɴᴀᴋᴀɴ ᴏʟᴇʜ ᴀᴅᴍɪɴ ɢʀᴏᴜᴩ!*',
 					Badmin: '*ᴍᴀᴀꜰ ᴩᴇʀɪɴᴛᴀʜ ɪɴɪ ʜᴀɴyᴀ ʙɪꜱᴀ ᴅɪ ɢᴜɴᴀᴋᴀɴ ᴋᴇᴛɪᴋᴀ ʙᴏᴛ ᴍᴇɴᴊᴀᴅɪ ᴀᴅᴍɪɴ!*',
-					publikG: `*ᴍᴀᴀꜰ ʙᴏᴛ ꜱᴇᴋᴀʀᴀɴɢ ꜱᴜᴅᴀʜ ᴅɪᴩʀɪᴠᴀᴛᴇ ᴏʟᴇʜ ᴏᴡɴᴇʀ*\n*ᴜɴᴛᴜᴋ ʟᴇʙɪʜ ᴊᴇʟᴀꜱɴyᴀ ᴋᴇᴛɪᴋ*\n*${prefix}infobot*`
+					publikG: `*ᴍᴀᴀꜰ ʙᴏᴛ ꜱᴇᴋᴀʀᴀɴɢ ꜱᴜᴅᴀʜ ᴅɪᴩʀɪᴠᴀᴛᴇ ᴏʟᴇʜ ᴏᴡɴᴇʀ*\n*ᴜɴᴛᴜᴋ ʟᴇʙɪʜ ᴊᴇʟᴀꜱɴyᴀ ᴋᴇᴛɪᴋ*\n*${prefix}info*`
 				}
 			}
 
@@ -373,7 +373,7 @@ async function starts() {
 				break 
 		case 'daftar':
 					frhan.updatePresence(from, Presence.composing)
-					if (isUser) return reply('Kamu Sudah Menjadi Teman AOOBOT:D')
+					if (isUser) return reply('Kamu Sudah Menjadi Teman FIDSBOT:D')
 					if (isBanned) return reply(mess.only.benned)
 					user.push(sender)
 					fs.writeFileSync('./database/json/user.json', JSON.stringify(user))
@@ -406,7 +406,7 @@ async function starts() {
 					await costum(help(prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam, tanggal), text, FarhanGans, rmenu)
     				break 
     			case 'infobot':
-    				await costum(bottt(prefix), text, FIDS, botinfo)
+    				await costum(bottt(prefix), text, FarhanGans, botinfo)
     				break
     			case 'profile':
     				frhan.updatePresence(from, Presence.composing)
@@ -437,7 +437,7 @@ async function starts() {
 					me = frhan.user
 					user.push(sender)
 					uptime = process.uptime()
-					teks = `➽ *Nama Bot* : ${me.name}\n➽ *Owner Bot* : @${ownerNumber}\n➽ *prefix* : | ${prefix} |\n➽ *Total Block* : ${blocked.length}\n➽ *Aktif Sejak* : ${kyun(uptime)}\n\n➽ *Total Pengguna* : ${user.length} User\n➽ *Special Thanks To* :\n\n➽ Allah SWT \n➽ MhankBarBar\n➽ Nurutomo\n➽ Monurios`
+					teks = `➽ *Nama Bot* : ${me.name}\n➽ *Owner Bot* : @${ownerNumber}\n➽ *prefix* : | ${prefix} |\n➽ *Total Block* : ${blocked.length}\n➽ *Aktif Sejak* : ${kyun(uptime)}\n\n➽ *Total Pengguna* : ${user.length} User\n➽ *Special Thanks To* :\n➽ Allah SWT \n➽ MhankBarBar\n➽ Nurutomo\n➽ Monurios`
 					buffer = await getBuffer(me.imgUrl)
 					frhan.sendMessage(from, buffer, image, {quoted: mek, caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break 
@@ -2217,7 +2217,7 @@ async function starts() {
 					for (let _ of anu) {
 						frhan.deleteChat(_.jid)
 					}
-					reply(`\`\`\`Sukses delete all chat AOOBOT\`\`\``)
+					reply(`\`\`\`Sukses delete all chat FIDSBOT\`\`\``)
 					break
                                 case 'bcgc':
 					frhan.updatePresence(from, Presence.composing) 
@@ -2250,7 +2250,7 @@ async function starts() {
 						reply('Suksess broadcast')
 					} else {
 						for (let _ of anu) {
-							sendMess(_.jid, `[ *AOOBOT BROADCAST* ]\n\n${body.slice(4)}`)
+							sendMess(_.jid, `[ *FIDSBOT BROADCAST* ]\n\n${body.slice(4)}`)
 						}
 						reply('Suksess broadcast')
 					}
@@ -3217,7 +3217,7 @@ case 'asupan':
 			break
 				default:
 					if (body.startsWith(`${prefix}${command}`)) {
-                  reply(`Maaf Kak, Command *${prefix}${command}* Tidak Terdaftar Di Dalam Database *${prefix}menu*`)
+                  reply(`Eyy Command *${prefix}${command}* Gada Di *${prefix}menu!*`)
                   }
 					if (isGroup && isSimi && budy != undefined) {
 						console.log(budy)
@@ -3225,7 +3225,7 @@ case 'asupan':
 						console.log(muehe)
 						reply(muehe)
 					} else {
-						console.log(color('[AOOBOT]','aqua'), 'Command Tidak Terdaftar', color(sender.split('@')[0]))
+						console.log(color('[FIDSBOT]','aqua'), 'Command Tidak Terdaftar', color(sender.split('@')[0]))
 					}
                            }
 		} catch (e) {
