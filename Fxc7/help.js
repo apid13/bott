@@ -20,6 +20,7 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 
 「 *ABOUT ${name}* 」
 │➻ *${prefix}report lapor bug*
+│➻ *${prefix}request fitur*
 │➻ *${prefix}info*
 │➻ *${prefix}donasi*
 │➻ *${prefix}owner*
@@ -89,6 +90,7 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 │➻ *${prefix}miku*
 │➻ *${prefix}anime*
 │➻ *${prefix}animecry*
+│➻ *${prefix}animehug*
 ╰───────────────────────
 「 *GROUP MENU* 」
 │➻ *${prefix}simih On/Off*
