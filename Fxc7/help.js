@@ -24,6 +24,7 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 │➻ *${prefix}info*
 │➻ *${prefix}donasi*
 │➻ *${prefix}owner*
+│➻ *${prefix}profile*
 │➻ *${prefix}speed*
 │➻ *${prefix}daftar*
 │➻ *${prefix}limit*
@@ -43,7 +44,6 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 │➻ *${prefix}ssweb url*
 │➻ *${prefix}url2img Url*
 │➻ *${prefix}tiktok*
-│➻ *${prefix}fototiktok*
 │➻ *${prefix}kbbi*
 │➻ *${prefix}wait*
 │➻ *${prefix}trendtwit*
