@@ -282,9 +282,6 @@ const donasi = (name) => {
 │
 │\`\`\`*GRUP*\`\`\`
 │ *10k Invite Bot Ke Grup selama 1 bulan*
-│
-│\`\`\`*PREMIUM*\`\`\`
-│ *5k daftar premium Selama 1 Bulan*
 ┬
 ╰──────「 *BY ${name}* 」
 
