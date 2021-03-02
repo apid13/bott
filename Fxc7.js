@@ -1637,7 +1637,7 @@ async function starts() {
 					await limitAdd(sender) 
 					break 
 			
-			/*case 'instaimg':
+			case 'instaimg':
 				if (isBanned) return reply(mess.only.benned)
 				if (!isUser) return reply(mess.only.userB)
 				if (!isPublic) return reply(mess.only.publikG)
@@ -1691,7 +1691,7 @@ async function starts() {
 				if (!isUser) return reply(mess.only.userB)
 				if (!isPublic) return reply(mess.only.publikG)
 				if (isLimit(sender)) return reply(limitend(pushname2))
-					if (args.length < 1) return reply('Yang mau di cari apaan? titit?')
+					if (args.length < 1) return reply('Yang mau di cari apa?')
 					anu = await fetchJson(`https://mhankbarbar.tech/api/ytsearch?q=${body.slice(10)}&apiKey=${BarBarApi}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
 					teks = '=================\n'
@@ -2156,7 +2156,7 @@ async function starts() {
 						teks += `╠➥ @${mem.jid.split('@')[0]} wa.me/${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					mentions(`╔═══✪ Tag By *${pushname2}* ✪══`+ teks +'╚═══〘 AOOBOT 〙═══', members_id, true)
+					mentions(`╔═══✪ Tag By *${pushname2}* ✪══`+ teks +'╚═══〘 FIDSBOT 〙═══', members_id, true)
 					break
 			    case 'mentionall':
 			    if (isBanned) return reply(mess.only.benned)    
@@ -2170,7 +2170,7 @@ async function starts() {
 						teks += `╠➥ @${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					mentions(`╔══〘  *${body.slice(12)}*  〙✪══`+teks+'╚═〘 AOOBOT 〙', members_id, true)
+					mentions(`╔══〘  *${body.slice(12)}*  〙✪══`+teks+'╚═〘 FIDSBOT 〙', members_id, true)
 					break
 			    case 'kbbi':
 			    if (isBanned) return reply(mess.only.benned)    
@@ -2421,7 +2421,7 @@ async function starts() {
 						reply('Pilih aktif / nonaktif')
 					}
 					break
-				case 'simih':
+				case 'simi':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 				if (!isPublic) return reply(mess.only.publikG)
