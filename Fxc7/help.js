@@ -154,7 +154,7 @@ const help = (prefix, instagram, yt, name, pushname2, user, limitt, uptime, jam,
 │➻ *${prefix}cantikcek*
 │➻ *${prefix}artinama*
 │➻ *${prefix}persengay*
-│➻ *${prefix}pbucin*
+│➻ *${prefix}persenbucin*
 │➻ *${prefix}bpfont*
 │➻ *${prefix}textstyle*
 │➻ *${prefix}jadwaltv antv*
