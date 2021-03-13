@@ -54,7 +54,6 @@ const figlet = require('figlet')
 const lolis = require('lolis.life')
 const loli = new lolis()
 
-
 const { BarBarApi, ZeksApi, TobzApi, VthearApi, LolApi, Fxc7Api } = JSON.parse(fs.readFileSync('./database/json/apikey.json'))
 const _welkom = JSON.parse(fs.readFileSync('./database/json/welkom.json'))
 const _nsfw = JSON.parse(fs.readFileSync('./database/json/nsfw.json'))
@@ -4472,7 +4471,7 @@ case 'nping':
                   }
 					if (isGroup && isSimi && budy != undefined) {
 						console.log(budy)
-						muehe = await simih(budy)
+						muehe = await simi(budy)
 						console.log(muehe)
 						reply(muehe)
 					} else {
